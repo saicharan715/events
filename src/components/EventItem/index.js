@@ -2,12 +2,12 @@
 import './index.css'
 
 const EventItem = props => {
-  const {eventDetails, setActiveEventId, isActive} = props
+  const {eventDetails, setActiveId, isActive} = props
   const {imageUrl, name, location, id} = eventDetails
   const eventImageClassName = isActive ? 'event-image-active' : 'event-image'
 
   const onClickEvent = () => {
-    setActiveEventId(id)
+    setActiveId(id)
   }
 
   return (

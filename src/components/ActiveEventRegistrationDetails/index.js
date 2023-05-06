@@ -2,8 +2,8 @@
 import './index.css'
 
 const registrationStatus = {
-  yetToRegister: 'TET_TO_REGISTER',
-  registered: 'REGISTERED',
+  yetToRegister: 'YET_TO_REGISTER',
+  register: 'REGISTER',
   registrationsClosed: 'REGISTRATIONS_CLOSED',
 }
 
@@ -53,10 +53,11 @@ const ActiveEventRegistrationDetails = props => {
         className="yet-to-register-image"
       />
       <p className="register-description">
-        A live performance so much to your relationship with dance. Seeing dance
-        live can often make you fall totally in love with this beautiful art
-        form.
+        A live performance brings so much to your relationship with dance
       </p>
+      <button className="register-here-button" type="button">
+        Register Here
+      </button>
     </div>
   )
 
